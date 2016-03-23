@@ -1,0 +1,225 @@
+/******************************/
+/*
+   site: rltx.com
+version: 2015-06-03
+ author: chenchuang
+  email: chenchuang@rltx.com
+*/
+/******************************/
+/*--reset--*/
+body{font-family:"microsoft yahei"; background: #f2f2f2;}
+ul,ol,li,h1,h2,h3,h4,h5,h6 { padding:0; margin:0; }
+ul,ol { list-style: none; }
+em { font-style: normal; }
+.clearfix:before,.clearfix:after{display:block;content:"\0020";height:0;overflow:hidden}
+.clearfix:after{clear:both}
+.clearfix{*zoom:1}
+.hide { display: none; }
+.hel { font-family: helvetica; }
+.org { color: #f48400 }
+.btn { display: inline-block; width: 80px; height: 30px; text-align: center; line-height: 30px; font-size: 14px; color: #fff; border:solid 1px #f48400; border-radius: 2px }
+.btn-default { background-color: #fff; color: #666; border-color: #ccc }
+.btn-default:active { background-color: #ccc; color: #666 }
+.btn-org { background-color: #f48400; }
+.btn-org:active { color: #fff; background-color: #df7902 }
+.btn-blue { display: block; margin:10px 15px; height: 34px; line-height: 34px; background: #0186d5; text-align: center; color: #fff; border-radius: 3px; box-shadow: 0 3px #0165a1 }
+.mui-bar { padding:0 15px; background: #f48400; box-shadow: none; }
+.mui-title { font-weight: 700; color: #fff; }
+.mui-bar .mui-btn-link { color: #fff }
+.mui-bar .mui-btn-nav.mui-pull-left { margin-left: -10px }
+.mui-bar-nav~.mui-content { background: none; }
+.list-fixed { padding-top: 94px !important }
+/*--lo index--*/
+.lo-index { margin: 15px }
+.lo-entry { font-size:0; }
+.lo-entry a { display: inline-block; width: 33.33%; font-size: 13px; text-align: center; color: #454545; margin-top: 20px }
+.ico-entry { position: relative; display: block; background: #fff url(../img/@1x/lo.png) no-repeat 0 0; background-size: 275px 55px; width: 57px; height: 57px; margin:8px auto; border:solid 1px #d6d6d6; border-radius: 3px }
+.lo2 { background-position: -55px 0 }
+.lo3 { background-position: -110px 0 }
+.lo4 { background-position: -165px 0 }
+.lo5 { background-position: -220px 0 }
+.tip-num { position: absolute; top: -7px; right: 0; -webkit-transform:translateX(50%); padding:0 5px; background-color: #e64e25; color: #fff; border-radius: 7px; height: 14px; line-height: 14px; text-align: center; font-size: 10px; font-family: helvetica;}
+/*--lo order-list--*/
+.mui-segmented-control { font-size: 12px }
+.mui-segmented-control a { position: relative; }
+.mui-segmented-control a:first-child:after,.mui-segmented-control a:nth-child(2):after,.filter-by a:first-child:after { content: ""; position: absolute; right: 0; top: 50%; -webkit-transform: scaleX(.5) translateY(-50%); width: 1px; height: 14px; background-color: #d6d6d6 }
+.mui-slider-progress-bar { background-color: #f48400 !important; margin-top: -2px; }
+.mui-segmented-control .mui-active { color: #f48400 !important }
+.mui-slider-group .mui-slider-item { border:0 !important; margin-top: 12px; }
+.mui-slider-indicator.mui-segmented-control { border-bottom: solid 1px #d6d6d6; background-color: #fff }
+.lo-list li { position: relative; background-color: #fff; padding:10px 0; margin-bottom: 12px; }
+.lo-list li:before,.lo-list li:after,.lo-top:after,.list-ft:before,.filter-list-wrap:before,.filter-list-wrap:after,.filter-list li:after,.section:before,.section:after,.ft-bar:before,.line-list li:after { content: ""; position: absolute; top:0; left: 0; width: 100%; height: 1px; background-color: #d6d6d6; -webkit-transform: scaleY(.5); }
+.lo-list li:after,.lo-top:after,.filter-list-wrap:after,.filter-list-wrap:after,.filter-list li:after,.section:after,.line-list li:after {  top: auto; bottom: 0; }
+.tag { display: inline-block; height: 15px; line-height: 15px; font-size: 12px; padding:0 1px; margin-right: 3px; border:solid 1px transparent; border-radius: 1px }
+.lo-top .tag { padding: 0 5px; margin-left: 3px  }
+.org-tag { border-color: #f48400; color: #f48400 }
+.blue-tag { border-color: #39c; color: #327bc0  }
+.ico-verified { display: inline-block; vertical-align: middle; margin-left: 3px; width: 22px; height: 22px; background-image: url(../img/@1x/truck-verified.png); background-size: 22px 22px }
+.lo-list .mui-navigate-right { position: relative; display: block; }
+.lo-list .mui-navigate-right:after { top: 11px; font-size: 20px }
+.lo-list .mui-navigate-right .status { margin-right: 20px }
+.list-bd { display: block; color: #666 }
+.list-bd:active { color: #666 }
+.lo-top { position: relative; padding:0 15px 10px; font-size: 15px; color: #666 }
+.company-name { float: left;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+@media (max-width: 321px) { 
+  .company-name { max-width: 215px; }
+}
+.status { float: right; color: #f48400; font-size: 12px }
+.user-level,.org-level { display: inline-block; font-size: 0; width:70px; height: 12px; overflow: hidden; margin-left: 3px; margin-top: -2px; vertical-align: middle; }
+.user-level i,.org-level i { display: inline-block; width: 12px; height: 12px; overflow:hidden; background-image: url(../img/@1x/user-level.png); background-size: 60px 12px; margin-right: 2px; vertical-align: top; }
+.org-level i { background-image: url(../img/@1x/org-level.png); }
+.ico-grey-star { background-position: 0 0 }
+.ico-star { background-position: -12px 0 }
+.ico-moon { background-position: -24px 0 }
+.ico-sun { background-position: -36px 0 }
+.ico-crown { background-position: -48px 0 }
+
+
+
+.lo-id { font-size: 11px; padding:0 15px; color: #999 }
+.lo-by { float: right; }
+.lo-info { margin:0 15px; }
+.truck-list .lo-info,.partner-list .lo-info { margin-bottom: 10px }
+.info-list { color: #666 }
+.info-list li { padding:0 0 0 0px; font-size: 14px; white-space: nowrap; overflow:hidden; text-overflow: ellipsis; margin-bottom: 0 }
+.truck-list .info-list li { padding-left: 0 }
+.info-list li:before,.info-list li:after { display: none; }
+.in-tit { float: left; display: block; width: 58px; height: 21px; line-height: 21px; margin-left: -62px; text-align: justify; white-space: normal; }
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+  .in-tit:after { content:"."; display: inline-block; width:100%; overflow:hidden; height:0; }
+}
+/*--progress--*/
+.progress { position: relative; float: right; width: 50px; height: 50px; margin-top: 5px }
+.progress div { position: absolute; top: 0; width: 50px; height: 50px; border:solid 5px #f2f2f2; border-radius: 50% }
+.circle-left,.circle-right,.circle-mask { clip: rect(0,25px,50px,0); }
+.circle-left,.circle-right { border-color:#259be6 !important; }
+.circle-right { -webkit-transform: rotate(180deg); transform: rotate(180deg); opacity: 0; }
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.progress .progress-percent { border: none; color: #259be6; font-size: 12px; text-align: center; line-height: 50px }
+
+.list-ft { position: relative; text-align: right; margin: 0 15px; padding-top: 10px; }
+.list-ft .btn { margin-left: 10px }
+
+/*--trucklist--*/
+.list-filter { position: fixed; z-index: 1000; top: 44px; width: 100%; height: 39px; line-height: 39px; background-color:#fff; border-bottom: solid 1px #d6d6d6; }
+.list-content { /*top: 96px;*/ }
+.filter-by { display: -webkit-flex; display: flex; flex-flow: row; }
+.filter-by a { position: relative; -webkit-flex: 1; flex: 1; text-align: center; font-size: 14px; color: #666 }
+.filter-by a:visited { color: #666 }
+.filter-by a .mui-icon { font-size: 20px; -webkit-transform: translateY(2px); }
+.filter-by a i,.filter-by a i:after { display: none; position: absolute; left: 50%; -webkit-transform: translateX(-50%); width: 0; height: 0; bottom: 0; border-bottom: solid 6px #d6d6d6; border-left: solid 6px transparent; border-right: solid 6px transparent; }
+.filter-by .active { color: #f48400 }
+.filter-by .active i,.filter-by .active i:after { content: ""; display: block; }
+.filter-by .active i:after { left: 1px; top: 1px; margin-left: -7px; border-bottom-color:#fff; -webkit-transform: translateX(0); }
+.mui-icon-arrowup:before { content: "\e580" !important }
+.dail { position: absolute; right: 15px; top: 50%; width: 22px; height: 22px; -webkit-transform: translate3D(0,-36%,0); }
+.lo-list .dail { width: 44px; height: 44px; }
+.dail a,.chat a { display: block; width: 22px; height: 22px; background-image: url(../img/@1x/dail.png); background-size: 22px 22px }
+.lo-list .dail a { width: 44px; height: 44px; background-position: center center; background-repeat: no-repeat; }
+.chat a { background-image: url(../img/@2x/chat.png); }
+.truck-type,.un-verified { font-size: 12px; color: #999; margin-left: 3px }
+.filter-mask { position: fixed; z-index: 999; background-color: rgba(0,0,0,.5); width: 100%; height: 100%; top: 82px; overflow: hidden; }
+.filter-list-wrap { position: relative; max-height: 50%; overflow-y: scroll; padding-left: 15px; background-color: #fff; }
+.filter-list li { position: relative; height: 44px; line-height: 44px; }
+.filter-list li a { display: block; font-size: 14px; color: #666 }
+.filter-list li a:active { color: #f48400 }
+.filter-list li .active { color: #f48400 }
+.filter-list li .active:after { content: ""; position: absolute; right: 15px; width: 22px; height: 22px; -webkit-transform: translateY(50%); background-image: url(../img/@1x/selected.png); background-size: 22px 22px }
+.filter-list .all { font-weight: bold; }
+.filter-list .all:after { -webkit-transform: scaleY(1); }
+/*--truck detail--*/
+.truck-detail,.partner-detail { padding-bottom: 64px }
+.header-section { position:relative; height: 220px; background:#f48400 url(../img/@1x/hdbg.png) no-repeat; background-size: cover }
+.header-opr { height: 44px; padding: 12px 5px 0 }
+.back { float: left; color: #fff; }
+.back a { color: #fff; font-size: 16px }
+.back a .mui-icon { float: left; }
+.more-opr { float: right; }
+.user-info { text-align: center; color: #fff }
+.user-info p { color:#fff; margin-bottom: 0 }
+.avatar { position: relative; display: block; margin:0 auto 3px; width: 83px; height: 83px; overflow:hidden; border:solid 2px rgba(255,255,255,.5); }
+.avatar img { width: 100%; height: 100%; }
+.border-circle { border-radius: 50% }
+.border-round { border-radius: 5% }
+.veri-status { position: absolute; width: 100%; height: 18px; line-height: 18px; left: 0; bottom: 0; background-color: rgba(0,0,0,.5); color: #fff; text-align: center; font-size: 10px }
+.user-info .ico-star { background-image: url(../img/@1x/star-y.png); background-size: 12px 12px }
+.map-position { position: absolute; width: 100%; bottom: 0; padding:0 15px; height: 42px; line-height: 42px; background-color: rgba(255,255,255,.2); }
+.map-position a { font-size:12px; color: #eae7e7 }
+.map-position .mui-navigate-right:after { color: #fff }
+.location { float: left; }
+.loctime { float: right; margin-right: 15px }
+.location:before { content: ""; display: inline-block; vertical-align: middle; margin-right: 8px; width: 22px; height: 22px; background-image: url(../img/@1x/map.png); background-size: 22px 22px }
+
+.section { position: relative; padding: 11px 15px; background-color: #fff; margin-top: 12px; }
+.sec-list { padding-right: 0 }
+.section .info-list { float: none; width: 100% }
+.section .info-list li { white-space: normal; padding-left: 68px }
+.section .info-list .in-tit { font-size: 12px; color: #999; width: 52px; margin-left: -68px }
+.remark { display: inline-block; line-height: 18px; padding-top: 3px }
+.verify-list { font-size: 0; }
+.verify-list li { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 10px; white-space: nowrap; overflow:hidden; text-overflow: ellipsis; font-size: 14px; color: #666 }
+.verify-list li:before { content: ""; display: inline-block; vertical-align: middle; margin-right: 8px; width: 22px; height: 22px; background-image: url(../img/@1x/verified.png); background-size: 22px 22px }
+.section a { color: #666 }
+.map-position .mui-navigate-right:after, .section .mui-navigate-right:after { right: 10px; font-size: 20px }
+.tit { font-size: 15px }
+.value { float: right; margin-right: 15px; font-size: 14px; color: #999 }
+.tip-info { padding: 0 15px; font-size: 12px; margin-top: 12px; margin-bottom: -8px; color: #666 }
+
+
+
+.ft-bar { position: fixed; bottom: 0; width: 100%; height: 52px; padding:11px 15px;  background-color: #fbfbfb; }
+.ft-bar .status { float: left; font-size: 15px; font-weight: bold; margin-top: 3px; }
+.handle { float: right; }
+.handle .btn { margin-left: 10px }
+
+/*--partner list*/
+
+.line-list li { position: relative; padding-bottom: 8px; margin-bottom: 10px; font-size: 14px; color: #666 }
+.line-list li:last-child { padding-bottom: 0; margin-bottom: 0 }
+.line-list li:last-child:after { display: none; }
+.con-info { float: left; }
+.con-opr { float: right; height: 22px; margin-right: 15px; -webkit-transform: translateY(50%); font-size: 0 }
+.person { color: #666; margin-bottom: 0 }
+.role { color: #999; margin-bottom: 0; font-size: 12px }
+.ico-phone { display: inline-block; vertical-align: middle; width: 22px; height: 22px; background-image: url(../img/@1x/phone.png); background-size: 22px 22px }
+.con-opr .dail { position: static; display: inline-block; -webkit-transform: none; }
+.chat { display: inline-block; width: 22px; height: 22px; padding-right: 12px; margin-right: 12px; border-right: solid 1px #d6d6d6; -webkit-box-sizing:content-box; }
+
+
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:2dppx)
+{
+    .ico-entry { background-image:url(../img/@2x/lo.png); }  
+    .ico-verified { background-image: url(../img/@2x/truck-verified.png);  }
+    .user-level i { background-image: url(../img/@2x/user-level.png); }
+    .org-level i { background-image: url(../img/@2x/org-level.png); }
+    .dail a { background-image:url(../img/@2x/dail.png); }  
+    .chat a { background-image: url(../img/@2x/chat.png); }
+    .filter-list li .active:after { background-image:url(../img/@2x/selected.png); }  
+    .user-info .ico-star { background-image:url(../img/@2x/star-y.png); }  
+    .verify-list li:before { background-image:url(../img/@2x/verified.png); }
+    .location:before { background-image:url(../img/@2x/map.png); }
+    .ico-phone { background-image:url(../img/@2x/phone.png); }  
+}
+@media (-webkit-min-device-pixel-ratio:3),(min-resolution:3dppx)
+{
+    .ico-entry { background-image:url(../img/@3x/lo.png); }  
+    .ico-verified { background-image: url(../img/@3x/truck-verified.png);  }
+    .user-level i { background-image: url(../img/@3x/user-level.png); }
+    .org-level i { background-image: url(../img/@3x/org-level.png); }
+    .dail a { background-image:url(../img/@3x/dail.png); }  
+    .chat a { background-image: url(../img/@3x/chat.png); }
+    .filter-list li .active:after { background-image:url(../img/@3x/selected.png); }  
+    .user-info .ico-star { background-image:url(../img/@3x/star-y.png); }  
+    .verify-list li:before { background-image:url(../img/@3x/verified.png); }
+    .location:before { background-image:url(../img/@3x/map.png); }
+    .ico-phone { background-image:url(../img/@3x/phone.png); } 
+}

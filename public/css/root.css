@@ -1,0 +1,32 @@
+/* 根节点样式 */
+body{background: #E6E6E6;}
+/* 圆角 */
+.round {
+    padding:10px; 
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+}
+
+.pageCenter{margin:0 auto;width: 80%;}
+
+.title{text-align: center;color: #000;font-size: 50px;height: 100px;background: #fff;line-height: 100px;margin-left: 40px;}
+
+.navigation ul {list-style-type:none;}
+.navigation a {text-decoration:none; color: #fff;}
+
+.navigation a:visited {
+    
+    text-decoration:none;color: #fff;
+}
+    
+.navigation a:hover {
+    text-decoration:none;color: #fff;
+    }
+ .navigation ul a li{height: 120px;font-size: 30px; padding:10px;
+    
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;}
+ .navigation ul a li div{font-size: 20px;border-top: 1px solid #fff;padding-top: 8px;}
+  .navigation ul div{height: 20px;border-top:none;padding-bottom: 20px;}

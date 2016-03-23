@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>nodejs版网站-dns服务</title>
+
+</head>
+<body style="margin: 0px;">
+<div id="out" style="margin:0 auto;margin-top:80px;width: 85%">
+
+	<div id="navigation"><%include navigation.html %></div>
+	<div id="main">
+		<% for(var i=0; i < state.length; i++) {%>
+		   <p>
+		   	
+		   		状态名称：《<%= state[i].name %>》
+		   		状态值：(<%= state[i].value %>)
+		   	
+		   </p>
+		<% } %>
+	</div>
+</div>
+</body>
+</html>

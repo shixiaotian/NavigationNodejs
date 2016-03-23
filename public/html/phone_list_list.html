@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>车队管理</title>
+
+    <script src="/js/zepto.min.js"></script>
+    <script src="/js/mui.min.js"></script>
+    <script src="/js/phone_list/list_frame.js"></script>
+    <script src="/js/phone_list/phone_list.js"></script>
+    <script src="/js/phone_list/phone_list_list.js"></script>
+    <link href="/css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="/css/sxt.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+<!-- 车辆分组filter mask -->
+<div id="group_items" class="filter-mask hide">
+    <div class="filter-list-wrap">
+        <ul class="filter-list" id="group_ul">
+        </ul>
+    </div>
+</div>
+<!-- 全部状态分组filter mask -->
+<div id="state_items" class="filter-mask hide">
+    <div class="filter-list-wrap">
+        <ul class="filter-list" id="state_items_ul">
+
+        </ul>
+    </div>
+</div>
+	<!--header-->
+	<header class="mui-bar mui-bar-nav">
+		<button onclick="javascript:window.location.href='/nodejs/html-demo';" class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">
+		    <span class="mui-icon mui-icon-left-nav"></span>
+		    返回
+		</button>
+		<h1 class="mui-title">列表</h1>
+	</header>
+    <div class="list-filter">
+        <!-- add class active -->
+        <p class="filter-by">
+            <a href="javascript:void(0)" class="" id="all_group">
+                <span class="filter-name" id="all_group_title"></span>
+                <span class="mui-icon mui-icon-arrowdown"></span>
+                <i></i>
+            </a>
+            <a href="javascript:void(0)" class="" id="all_state">
+                            <span class="filter-name" id="all_state_title">
+                            </span><span class="mui-icon mui-icon-arrowdown" ></span>
+            <i></i>
+            </a>
+        </p>
+    </div>
+	<!--body-->
+	<div id="controller" class="mui-content list-fixed mui-scroll-wrapper">
+            <!--truck-list-->
+            <div class="mui-scroll" >
+                <!-- list -->
+                <ul class="lists lo-list" id="list_items" >
+                </ul>
+            </div>
+	</div>
+</body>
+</html>

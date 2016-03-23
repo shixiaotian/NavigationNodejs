@@ -1,0 +1,7 @@
+<!-- 导航模板 -->
+<ul class="navigation">
+<% for(var i=0; i<navigation.length; i++) {%>
+   <a href="<%= navigation[i].url %>"><li><%= navigation[i].name %><div><%= navigation[i].describer %></div></li></a>
+   <div></div>
+<% } %>
+</ul>

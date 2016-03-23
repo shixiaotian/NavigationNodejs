@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>nodejs版网站-dns服务</title>
+
+</head>
+<body style="margin: 0px;">
+<div id="out" style="margin:0 auto;margin-top:80px;width: 85%">
+	<a href="/nodejs/dns/all/current">手动获取最新的DNS</a>
+	<div id="navigation"><%include navigation.html %></div>
+	<div id="main">
+		<% for(var i=0; i < dnss.length; i++) {%>
+		   <p>
+		   	<a href="<%= dnss[i].url %>">
+		   		站点名称：《<%= dnss[i].name %>》
+		   		编码：<%= dnss[i].code %>
+		   		地址：(<%= dnss[i].url %>)
+		   	</a>
+		   </p>
+		<% } %>
+	</div>
+</div>
+</body>
+</html>

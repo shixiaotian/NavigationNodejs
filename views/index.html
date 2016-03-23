@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<title>根导航页</title>
+
+ <link rel="stylesheet" href="/css/root.css"/>
+
+ <script language="javascript" src="/js/jquery.min.js" charset="utf-8"></script>
+ <!--
+
+<script language="javascript" src="/js/jquery.mousewheel.m.js" charset="utf-8"></script>	
+<script language="javascript" src="/js/jquery.sudySlider.m.js" charset="utf-8"></script> 
+
+	<script type="text/javascript">
+	var imgs = [
+	        	{title:"后台",src:'/images/index/company_1.jpg'},
+	        	{title:"前端",src:'/images/index/company_2.jpg'},
+	        	{title:"opencv计算机视觉技术",src:'/images/index/company_3.jpg'},
+	        	{title:"移动端开发",src:'/images/index/company_4.jpg'},
+	        	{title:"良好的沟通",src:'/images/index/company_5.jpg'},
+	        	{title:"java安全",src:'/images/index/company_6.jpg'}
+	        	];
+	</script>-->
+</head>
+<body style="margin: 0px;">
+<div id="out" class="pageCenter">
+	<div class="title round">根导航</div>
+	<div id="navigation" class="navigation"><%include navigation.html %></div>
+	<script type="text/javascript">
+
+		var colors = ["#3F91FD","#FD1C54","#FCE15A","#B80AA7"];
+		var i = 0;
+		$('ul a li').each(function(){
+			
+			if(i >= colors.length){i = 0;}
+			$(this).css('background',colors[i]);
+			i++;
+		}); 
+	</script>-
+</div>
+</body>
+</html>
